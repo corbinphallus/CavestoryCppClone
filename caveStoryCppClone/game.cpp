@@ -1,9 +1,9 @@
 #include <SDL.h>
+#include <algorithm>
 
 #include "game.h"
 #include "graphics.h"
 #include "input.h"
-#include <algorithm>
 
 /* Game class
  * This class holds all the information for our main game loop
