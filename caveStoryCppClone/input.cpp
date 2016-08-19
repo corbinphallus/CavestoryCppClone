@@ -4,7 +4,7 @@
  * keeps track of keyboard state
  */
 
-//This function gets called at the behinning of each new frame
+//This function gets called at the beginning of each new frame
 //to reset the keys that are no longer relevant
 
 void Input::beginNewFrame() {
@@ -12,6 +12,7 @@ void Input::beginNewFrame() {
 	this->_releasedKeys.clear();
 }
 
+//This gets called when a key is pressed
 void Input::keyDownEvent(const SDL_Event& event) {
 	this->_pressedKeys[event.key.keysym.scancode] = true;
 	this->_heldKeys[event.key.keysym.scancode] = true;
